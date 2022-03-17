@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_marginTop="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="26dp"
+    android:orientation="vertical"
+
     tools:context=".ui.auth.signin.SigninFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Email Address" />
 
-</FrameLayout>
+    <EditText
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your email address"/>
+
+    <TextView
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:padding="10dp"
+        style="@style/TextView.PoppinsNormal16sp020202"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:theme="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#FFFF"
+        android:background="@drawable/shape_rectangle_yellow"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sign In"
+        android:textAllCaps="false" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Create New Account"
+        android:textAllCaps="false" />
+</LinearLayout>

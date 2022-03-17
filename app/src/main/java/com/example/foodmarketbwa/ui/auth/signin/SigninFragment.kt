@@ -5,14 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.foodmarketbwa.R
+import com.example.foodmarketbwa.databinding.ActivityMainBinding
+import com.example.foodmarketbwa.databinding.FragmentSigninBinding
 
-class SigninFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_signin, container, false)
+class SigninFragment : Fragment(R.layout.fragment_signin){
+    private lateinit var binding: FragmentSigninBinding
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding = FragmentSigninBinding.bind(view)
+
+
+//        findNavController().navigate(R.)
     }
 }
